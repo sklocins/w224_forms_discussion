@@ -17,6 +17,7 @@
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
+    display: inline;
     /* background: #575294; */
     color: #702082;
   }
@@ -28,6 +29,15 @@
     font-weight: bold;
     background: #CFC096;
     color: #9B9A6D;
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+
+  #label {
+    width: 100%;
+    padding: 10px;
+    grid-row-start: 2;
+    grid-column-start: 1;
   }
 
   #message {

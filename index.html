@@ -10,20 +10,21 @@
     <!-- Add a favicon -->
 </head>
 <body>
-  <!-- Implement a skip to main! -->
+  <a class="skip-main" href = "#main">Skip to Main Content</a>
+  <main id="main">
     <form action="https://formspree.io/f/mayrbavd" method="post"> Connect to formspree.io
-        <label for="name">Name:</label>
+        <label for="name" id="label">Name:</label>
         <input type="text" id="name" name="name"><br><br>
-<div class="radio">
-        <label>Area of Submission:</label><br>
-        <!-- How can the label and button line up and be easily navigatable? -->
-  <input type="radio" id="travel" name="interest" value="travel" required>
-  <label for="travel">Travel</label><br>
-  <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
-  <label for="recipe">Recipe</label><br>
-  <input type="radio" id="pets" name="interest" value="pets">
-  <label for="pets">Pets</label><br><br>
-</div>
+        <div class="radio">
+          <label>Area of Submission:</label><br>
+          <!-- How can the label and button line up and be easily navigatable? -->
+          <input type="radio" id="travel" name="interest" value="travel" required>
+          <label for="travel" id="label">Travel</label><br>
+          <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+          <label for="recipe">Recipe</label><br>
+          <input type="radio" id="pets" name="interest" value="pets">
+          <label for="pets">Pets</label><br><br>
+        </div>
 
 
         <label for="message">Message:</label>
@@ -36,5 +37,6 @@
 
         <button type="reset">Reset</button>
       </form>
+    </main>
 </body>
 </html>
